@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krisu's People Color Type Picker</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+
+    <header class="app-header">
+        <h1>Krisu's People Color Type Picker</h1>
+    </header>
+
+    <main class="app-container">
+        <section class="picker-panel">
+            <div class="control-group type-group">
+                <label for="color-type-select">Type:</label>
+                <select id="color-type-select"></select>
+            </div>
+            <div class="control-group count-group">
+                <label for="color-count-input">Count:</label>
+                <input id="color-count-input" type="number" step="1" value="150">
+            </div>
+            <div class="control-group step-group">
+                <label for="color-step-input">Step %:</label>
+                <input id="color-step-input" type="number" step="0.5" placeholder="2.5">
+            </div>
+        </section>
+
+        <section id="colors-grid" class="colors-grid"></section>
+    </main>
+
+    <div id="fullscreen-overlay" class="fullscreen-overlay"></div>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

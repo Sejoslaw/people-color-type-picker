@@ -284,6 +284,7 @@ const ColorPickerApp = {
 
         this.overlayElement.addEventListener("click", () => {
             this.overlayElement.classList.remove("active");
+            document.body.classList.remove('no-scroll');
         });
     },
 
@@ -412,6 +413,7 @@ const ColorPickerApp = {
             tile.addEventListener("click", () => {
                 this.overlayElement.style.backgroundColor = hexValue;
                 this.overlayElement.classList.add("active");
+                document.body.classList.add('no-scroll');
             });
 
             this.gridElement.appendChild(tile);
